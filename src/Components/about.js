@@ -1,7 +1,7 @@
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-import pic from "./../picture.png";
+import pic from "./../picture1.jpeg";
 import Badge from "react-bootstrap/Badge";
 
 function About() {
@@ -9,47 +9,47 @@ function About() {
     <Container>
       <Row>
         <Col>
-          <div style={{ marginTop: 3 + "em" }} className="div-box container">
+          <div style={{ marginTop: 3 + "em", marginBottom: 1 + "em" }} className="div-box container">
             <p>
               <span className="h4" style={{ color: "pink" }}>
-                Hey!{" "}
+                Hey!
               </span>
               <br />I am{" "}
               <span className="h4" style={{ color: "orange" }}>
                 {" "}
                 Shreya Porwal
-              </span>{" "}
+              </span>
               <br />
               Aspiring <br />
-              Software Dev.{" "}
+              Software Dev. <br/>
+              hsahsi au ais  iy i o du daiyd  adis adhoia s isdj sid  sidu isd si ud sid isadsaud s usi dsa du spdau psa syu szyf usyf uya dus ds dsu dysdy syd yd ias ds sd apd
             </p>
           </div>
-        </Col>{" "}
+        </Col>
+
         <br />
+
         <Col>
-          {" "}
-          <div style={{ marginTop: 3 + "em" }} className="div-box container">
+          <div style={{ marginTop: 3 + "em", marginBottom: 1 + "em" }} className="div-box container">
             <img
               height={270 + "vh"}
-              style={{ borderRadius: 10 + "%" }}
+              style={{ borderRadius: 50 + "%" , aspectRatio:1, objectFit:'contain', backgroundColor:'#ffffff'}}
               src={pic}
-            />
+           alt="" />
           </div>
         </Col>
       </Row>
 
       <br />
-      <div
-        style={{ flexDirection: "row" }}
-        gap={4}
-        className="div-box container"
-      >
+      <Row> <h1>Tech Stack</h1></Row>
+      
+       
         <Badge bg="dark" style={{ margin: 0.5 + "em" }}>
           {/* github */}
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            height="50"
-            width="50"
+            height="70"
+            width="70"
             viewBox="0 0 496 512"
           >
             <path
@@ -78,21 +78,27 @@ function About() {
             ></path>
           </svg>
         </Badge>
-      </div>
-      <div style={{ flexDirection: "row" }} className="div-box container">
-
-      <Badge bg="dark" style={{ margin: 0.5 + "em" }}>
-        {/* git */}
-        <svg xmlns="http://www.w3.org/2000/svg" height="70" width="70" viewBox="0 0 448 512">
-          <path fill="#F1502F" d="M439.6 236.1L244 40.5a28.9 28.9 0 0 0 -40.8 0l-40.7 40.6 51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.2 199v121.9c25.3 12.5 22.3 41.9 9.1 55a34.3 34.3 0 0 1 -48.6 0c-17.6-17.6-11.1-46.9 11.3-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1a28.9 28.9 0 0 0 0 40.8l195.6 195.6a28.9 28.9 0 0 0 40.8 0l194.7-194.7a28.9 28.9 0 0 0 0-40.8z"/></svg>
+        <Badge bg="dark" style={{ margin: 0.5 + "em" }}>
+          {/* git */}
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="70"
+            width="70"
+            viewBox="0 0 448 512"
+          >
+            <path
+              fill="#F1502F"
+              d="M439.6 236.1L244 40.5a28.9 28.9 0 0 0 -40.8 0l-40.7 40.6 51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.2 199v121.9c25.3 12.5 22.3 41.9 9.1 55a34.3 34.3 0 0 1 -48.6 0c-17.6-17.6-11.1-46.9 11.3-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1a28.9 28.9 0 0 0 0 40.8l195.6 195.6a28.9 28.9 0 0 0 40.8 0l194.7-194.7a28.9 28.9 0 0 0 0-40.8z"
+            />
+          </svg>
         </Badge>
 
         <Badge bg="dark" style={{ margin: 0.5 + "em" }}>
           {/* css */}
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            height="50"
-            width="50"
+            height="70"
+            width="70"
             viewBox="0 0 384 512"
           >
             <path
@@ -105,8 +111,8 @@ function About() {
           {/* html */}
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            height="50"
-            width="50"
+            height="70"
+            width="70"
             viewBox="0 0 384 512"
           >
             <path
@@ -115,7 +121,6 @@ function About() {
             />
           </svg>
         </Badge>
-        
 
         <Badge bg="dark" style={{ margin: 0.5 + "em" }}>
           <svg
@@ -130,8 +135,6 @@ function About() {
             />
           </svg>
         </Badge>
-      </div>
-      <div style={{ flexDirection: "row" }} className="div-box container">
         <Badge bg="dark" style={{ margin: 0.5 + "em" }}>
           {/* Flask */}
           <svg
@@ -271,7 +274,9 @@ function About() {
             />
           </svg>
         </Badge>
-      </div>
+        
+     
+      
     </Container>
   );
 }

@@ -1,6 +1,6 @@
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import Navbox from './Components/nav.js'
 import About from './Components/about.js'
 import Home from './Components/home.js'

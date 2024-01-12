@@ -1,17 +1,26 @@
+import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import logo from './logo.svg';
-import './App.css';
 import Navbox from './Components/nav.js'
 import About from './Components/about.js'
-
+import Home from './Components/home.js'
+import Contact from './Components/contact.js'
+import Projects from './Components/projects.js'
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 function App() {
-  return (
+  return (<BrowserRouter>
     <div className="App">
+      
       <Navbox />
-      <About />
-
-    </div>
+      <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/About" element={<About />} />
+            <Route path="/Projects" element={<Projects />} />
+            <Route path="/Contact" element={<Contact />} />
+      </Routes>
+      
+    </div></BrowserRouter>
   );
 }
 

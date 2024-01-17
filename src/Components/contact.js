@@ -8,8 +8,7 @@ import Form from "./Form.js";
 
 
 function Contact() {
-  let now = new Date();
-  let year = now.getFullYear();
+  
   return (
     <Container>
       <Row>
@@ -57,9 +56,7 @@ function Contact() {
 
       </Row>
 
-      <br />
       
-        <footer fixed=" bottom" style={{marginBottom:0}} className="footer sticky sticky-bottom"> shreya@portfolio:~$ sudo copyright-{year}  - -made-with-patience</footer>
       
     </Container>
   );
